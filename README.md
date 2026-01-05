@@ -2,6 +2,22 @@
 
 Technical documentation and implementation scripts for deploying a CyberArk Privilege Cloud lab environment with high availability, Active Directory integration, and multi-factor authentication.
 
+---
+
+## 📚 Official Documentation & References
+
+| Resource | URL |
+|----------|-----|
+| **CyberArk Privilege Cloud Docs** | [docs.cyberark.com/privilege-cloud](https://docs.cyberark.com/privilege-cloud/latest/en/content/landing-pages/lprivcloud.htm) |
+| **CyberArk Identity Docs** | [docs.cyberark.com/identity](https://docs.cyberark.com/identity/latest/en/content/landing-pages/lpidentity.htm) |
+| **CyberArk Marketplace** | [cyberark-customers.force.com/mplace](https://cyberark-customers.force.com/mplace/s/#--Background) |
+| **CyberArk Community** | [cyberark-customers.force.com](https://cyberark-customers.force.com/s/) |
+| **CyberArk Support Portal** | [support.cyberark.com](https://support.cyberark.com) |
+| **Microsoft TIER Model** | [learn.microsoft.com - Privileged Access Model](https://learn.microsoft.com/en-us/security/privileged-access-workstations/privileged-access-access-model) |
+| **Microsoft AD DS Documentation** | [learn.microsoft.com - AD DS](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview) |
+
+---
+
 ## Overview
 
 This repository contains the complete architecture and implementation guide for an enterprise-grade CyberArk Privilege Cloud lab environment, implementing:
@@ -144,3 +160,53 @@ Test-NetConnection -ComputerName "connector.privilegecloud.cyberark.cloud" -Port
 - Domain-joined servers
 - HTTPS/443 connectivity to CyberArk Cloud
 - PowerShell with ActiveDirectory module on DC
+
+---
+
+## 📖 Additional Resources
+
+### CyberArk Documentation
+
+| Topic | Link |
+|-------|------|
+| System Requirements | [Privilege Cloud Requirements](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/system-requirements.htm) |
+| Network Requirements | [Network Configuration](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/network-requirements.htm) |
+| PSM Installation | [Install PSM Connector](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/install-connector.htm) |
+| PSM High Availability | [PSM HA Configuration](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/psm-ha.htm) |
+| SIA Overview | [Secure Infrastructure Access](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/sia-overview.htm) |
+| MFA Configuration | [Multi-Factor Authentication](https://docs.cyberark.com/identity/latest/en/content/mfa/mfa.htm) |
+| Safe Management | [Managing Safes](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/safes.htm) |
+| REST API | [Web Services SDK](https://docs.cyberark.com/privilege-cloud/latest/en/content/webservices/webservices.htm) |
+
+### Microsoft Documentation
+
+| Topic | Link |
+|-------|------|
+| Active Directory | [AD DS Overview](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview) |
+| TIER Model | [Privileged Access Security](https://learn.microsoft.com/en-us/security/privileged-access-workstations/privileged-access-access-model) |
+| PowerShell AD Module | [ActiveDirectory Module](https://learn.microsoft.com/en-us/powershell/module/activedirectory/) |
+| Windows Server | [Windows Server Documentation](https://learn.microsoft.com/en-us/windows-server/) |
+| Remote Desktop Services | [RDS Overview](https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/welcome-to-rds) |
+
+### Third-Party Integration
+
+| Topic | Link |
+|-------|------|
+| Okta SAML | [Okta SAML Configuration](https://help.okta.com/en-us/content/topics/apps/apps_app_integration_wizard_saml.htm) |
+| SAML 2.0 Specification | [OASIS SAML](http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html) |
+
+### Community & Tools
+
+| Resource | Link |
+|----------|------|
+| psPAS PowerShell Module | [github.com/pspete/psPAS](https://github.com/pspete/psPAS) |
+| CyberArk GitHub | [github.com/cyberark](https://github.com/cyberark) |
+| CyberArk Community Forums | [CyberArk Community](https://cyberark-customers.force.com/s/) |
+
+---
+
+## 📋 License & Disclaimer
+
+This documentation is provided for educational and implementation purposes within authorized lab environments. Always refer to official CyberArk documentation for production deployments.
+
+**CyberArk** is a registered trademark of CyberArk Software Ltd. **Microsoft**, **Windows Server**, and **Active Directory** are trademarks of Microsoft Corporation. **Okta** is a trademark of Okta, Inc.

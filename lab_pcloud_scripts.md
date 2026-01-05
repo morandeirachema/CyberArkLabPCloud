@@ -6,6 +6,42 @@ Scripts for CyberArk Privilege Cloud lab environment implementation.
 
 ---
 
+## 📚 External References
+
+### PowerShell & Active Directory
+
+| Cmdlet/Topic | Documentation |
+|--------------|---------------|
+| **New-ADUser** | [Microsoft Docs](https://learn.microsoft.com/en-us/powershell/module/activedirectory/new-aduser) |
+| **New-ADGroup** | [Microsoft Docs](https://learn.microsoft.com/en-us/powershell/module/activedirectory/new-adgroup) |
+| **New-ADOrganizationalUnit** | [Microsoft Docs](https://learn.microsoft.com/en-us/powershell/module/activedirectory/new-adorganizationalunit) |
+| **Get-ADUser** | [Microsoft Docs](https://learn.microsoft.com/en-us/powershell/module/activedirectory/get-aduser) |
+| **Add-ADGroupMember** | [Microsoft Docs](https://learn.microsoft.com/en-us/powershell/module/activedirectory/add-adgroupmember) |
+| **Disable-ADAccount** | [Microsoft Docs](https://learn.microsoft.com/en-us/powershell/module/activedirectory/disable-adaccount) |
+| **Move-ADObject** | [Microsoft Docs](https://learn.microsoft.com/en-us/powershell/module/activedirectory/move-adobject) |
+| **Get-Service** | [Microsoft Docs](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-service) |
+| **Test-NetConnection** | [Microsoft Docs](https://learn.microsoft.com/en-us/powershell/module/nettcpip/test-netconnection) |
+| **Install-WindowsFeature** | [Microsoft Docs](https://learn.microsoft.com/en-us/powershell/module/servermanager/install-windowsfeature) |
+
+### CyberArk Documentation
+
+| Topic | Documentation |
+|-------|---------------|
+| **AD Connector Setup** | [CyberArk Identity - AD Integration](https://docs.cyberark.com/identity/latest/en/content/integrations/ad/ad-integration.htm) |
+| **PSM Installation** | [CyberArk - Install Connector](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/install-connector.htm) |
+| **PSM Requirements** | [CyberArk - Connector Requirements](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/connector-requirements.htm) |
+| **Service Accounts** | [CyberArk - Service Account Best Practices](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/psm-service-account.htm) |
+
+### Windows Server
+
+| Topic | Documentation |
+|-------|---------------|
+| **RDS Session Host** | [Microsoft - Remote Desktop Services](https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/welcome-to-rds) |
+| **Windows Defender Exclusions** | [Microsoft - Configure Exclusions](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-exclusions-microsoft-defender-antivirus) |
+| **DNS Server** | [Microsoft - DNS Overview](https://learn.microsoft.com/en-us/windows-server/networking/dns/dns-top) |
+
+---
+
 ## Table of Contents
 
 1. [AD Connector Service Account](#1-ad-connector-service-account)

@@ -2,6 +2,22 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+---
+
+## 📚 Key Documentation References
+
+When assisting with this repository, reference these official documentation sources:
+
+| Resource | URL |
+|----------|-----|
+| CyberArk Privilege Cloud | https://docs.cyberark.com/privilege-cloud/latest/en/content/landing-pages/lprivcloud.htm |
+| CyberArk Identity | https://docs.cyberark.com/identity/latest/en/content/landing-pages/lpidentity.htm |
+| Microsoft AD DS | https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview |
+| Microsoft TIER Model | https://learn.microsoft.com/en-us/security/privileged-access-workstations/privileged-access-access-model |
+| PowerShell AD Module | https://learn.microsoft.com/en-us/powershell/module/activedirectory/ |
+
+---
+
 ## Repository Overview
 
 This is a documentation repository for implementing a CyberArk Privilege Cloud lab environment. It contains:

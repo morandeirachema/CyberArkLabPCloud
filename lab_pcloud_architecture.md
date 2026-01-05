@@ -9,6 +9,58 @@
 
 ---
 
+## 📚 External References & Official Documentation
+
+### CyberArk Documentation Portal
+
+| Component | Documentation Link |
+|-----------|-------------------|
+| **Privilege Cloud Overview** | [docs.cyberark.com/privilege-cloud](https://docs.cyberark.com/privilege-cloud/latest/en/content/landing-pages/lprivcloud.htm) |
+| **CyberArk Identity** | [docs.cyberark.com/identity](https://docs.cyberark.com/identity/latest/en/content/landing-pages/lpidentity.htm) |
+| **System Requirements** | [Privilege Cloud Requirements](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/system-requirements.htm) |
+| **Network Requirements** | [Network Configuration](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/network-requirements.htm) |
+| **AD Integration** | [Identity AD Integration](https://docs.cyberark.com/identity/latest/en/content/integrations/ad/ad-integration.htm) |
+| **MFA Configuration** | [Multi-Factor Authentication](https://docs.cyberark.com/identity/latest/en/content/mfa/mfa.htm) |
+| **PSM Overview** | [Privileged Session Manager](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/psm-overview.htm) |
+| **PSM Installation** | [Install Connector](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/install-connector.htm) |
+| **PSM High Availability** | [PSM HA Configuration](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/psm-ha.htm) |
+| **SIA Overview** | [Secure Infrastructure Access](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/sia-overview.htm) |
+| **Safe Management** | [Managing Safes](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/safes.htm) |
+| **Platform Management** | [Platforms Overview](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/platforms-overview.htm) |
+| **SAML Federation** | [External IdP Integration](https://docs.cyberark.com/identity/latest/en/content/integrations/saml/saml-external-idp.htm) |
+
+### Microsoft Documentation
+
+| Topic | Documentation Link |
+|-------|-------------------|
+| **Active Directory DS** | [AD DS Overview](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview) |
+| **TIER Model / PAW** | [Privileged Access Model](https://learn.microsoft.com/en-us/security/privileged-access-workstations/privileged-access-access-model) |
+| **Securing Privileged Access** | [Security Best Practices](https://learn.microsoft.com/en-us/security/privileged-access-workstations/overview) |
+| **LDAP/LDAPS** | [LDAP Overview](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ldap/lightweight-directory-access-protocol-ldap-api) |
+| **DNS Server** | [DNS Documentation](https://learn.microsoft.com/en-us/windows-server/networking/dns/dns-top) |
+| **Remote Desktop Services** | [RDS Overview](https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/welcome-to-rds) |
+| **PowerShell AD Module** | [ActiveDirectory Cmdlets](https://learn.microsoft.com/en-us/powershell/module/activedirectory/) |
+
+### Third-Party Integration
+
+| Platform | Documentation Link |
+|----------|-------------------|
+| **Okta SAML** | [Okta SAML App Integration](https://help.okta.com/en-us/content/topics/apps/apps_app_integration_wizard_saml.htm) |
+| **Okta Developer** | [SAML 2.0 Overview](https://developer.okta.com/docs/concepts/saml/) |
+| **SAML Specification** | [OASIS SAML 2.0](http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html) |
+
+### CyberArk Community & Support
+
+| Resource | Link |
+|----------|------|
+| **CyberArk Community** | [cyberark-customers.force.com](https://cyberark-customers.force.com/s/) |
+| **CyberArk Marketplace** | [Platform & Integration Packs](https://cyberark-customers.force.com/mplace/s/#--Background) |
+| **CyberArk Support** | [support.cyberark.com](https://support.cyberark.com) |
+| **psPAS PowerShell Module** | [github.com/pspete/psPAS](https://github.com/pspete/psPAS) |
+| **CyberArk GitHub** | [github.com/cyberark](https://github.com/cyberark) |
+
+---
+
 ## 1. Executive Summary
 
 This document defines the technical architecture for implementing the CyberArk Privilege Cloud lab environment. The architecture addresses eight key areas:
