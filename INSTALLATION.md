@@ -32,6 +32,11 @@
 
 ## 1. Introduction
 
+> **📚 External References:**
+> - [CyberArk Privilege Cloud Documentation](https://docs.cyberark.com/privilege-cloud/latest/en/content/landing-pages/lprivcloud.htm)
+> - [CyberArk Identity Documentation](https://docs.cyberark.com/identity/latest/en/content/landing-pages/lpidentity.htm)
+> - [CyberArk Privilege Cloud Architecture](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/privilege-cloud-architecture.htm)
+
 ### 1.1 Purpose
 
 This document provides a comprehensive, step-by-step installation guide for deploying a CyberArk Privilege Cloud lab environment. The guide is designed for solutions architects and systems engineers who need to implement a fully functional PAM environment with high availability, multi-factor authentication, and enterprise directory integration.
@@ -95,6 +100,12 @@ This installation covers:
 ---
 
 ## 2. Prerequisites and Planning
+
+> **📚 External References:**
+> - [Privilege Cloud System Requirements](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/system-requirements.htm)
+> - [Privilege Cloud Network Requirements](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/network-requirements.htm)
+> - [Connector Requirements](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/connector-requirements.htm)
+> - [CyberArk Marketplace - IP Ranges](https://cyberark.my.site.com/s/article/Privilege-Cloud-IP-Ranges-and-Domains)
 
 ### 2.1 CyberArk Privilege Cloud Tenant
 
@@ -236,6 +247,13 @@ DOCUMENTATION
 ---
 
 ## 3. Infrastructure Preparation
+
+> **📚 External References:**
+> - [Microsoft: Install Windows Server](https://learn.microsoft.com/en-us/windows-server/get-started/install-options-server-core-desktop-experience)
+> - [Microsoft: Remote Desktop Services](https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/welcome-to-rds)
+> - [Microsoft: Windows Defender Exclusions](https://learn.microsoft.com/en-us/microsoft-365/security/defender-endpoint/configure-exclusions-microsoft-defender-antivirus)
+> - [Microsoft: DNS Server](https://learn.microsoft.com/en-us/windows-server/networking/dns/dns-top)
+> - [CyberArk: Prepare Connector Machine](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/prepare-connector-machine.htm)
 
 ### 3.1 Verify Server Connectivity
 
@@ -560,6 +578,15 @@ Write-Host "`nTesting DNS Round Robin (psm.indramind.cyblab):" -ForegroundColor 
 ---
 
 ## 4. Phase 1: Active Directory Configuration
+
+> **📚 External References:**
+> - [Microsoft: Active Directory Domain Services Overview](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview)
+> - [Microsoft: AD DS Deployment](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/deploy/ad-ds-deployment)
+> - [Microsoft: Privileged Access Model (TIER Model)](https://learn.microsoft.com/en-us/security/privileged-access-workstations/privileged-access-access-model)
+> - [Microsoft: Securing Privileged Access](https://learn.microsoft.com/en-us/security/privileged-access-workstations/overview)
+> - [Microsoft: New-ADOrganizationalUnit](https://learn.microsoft.com/en-us/powershell/module/activedirectory/new-adorganizationalunit)
+> - [Microsoft: New-ADGroup](https://learn.microsoft.com/en-us/powershell/module/activedirectory/new-adgroup)
+> - [Microsoft: New-ADUser](https://learn.microsoft.com/en-us/powershell/module/activedirectory/new-aduser)
 
 ### 4.1 Overview
 
@@ -1084,6 +1111,13 @@ Write-Host "[OK] Read permissions granted to $ServiceAccount" -ForegroundColor G
 
 ## 5. Phase 2: CyberArk Identity Setup
 
+> **📚 External References:**
+> - [CyberArk Identity Administration Guide](https://docs.cyberark.com/identity/latest/en/content/admin/admin.htm)
+> - [CyberArk Identity: Configure AD](https://docs.cyberark.com/identity/latest/en/content/integrations/ad/ad-integration.htm)
+> - [CyberArk Identity: Directory Services](https://docs.cyberark.com/identity/latest/en/content/coreservices/coreservicesdirectories.htm)
+> - [CyberArk Identity: LDAP Configuration](https://docs.cyberark.com/identity/latest/en/content/coreservices/ldap-directories.htm)
+> - [Microsoft: LDAP Overview](https://learn.microsoft.com/en-us/previous-versions/windows/desktop/ldap/lightweight-directory-access-protocol-ldap-api)
+
 ### 5.1 Overview
 
 This phase configures CyberArk Identity with Active Directory as the primary identity provider.
@@ -1303,6 +1337,13 @@ After login, verify:
 
 ## 6. Phase 3: User Management
 
+> **📚 External References:**
+> - [CyberArk Identity: User Management](https://docs.cyberark.com/identity/latest/en/content/admin/user-management.htm)
+> - [CyberArk Identity: User Lifecycle](https://docs.cyberark.com/identity/latest/en/content/admin/user-lifecycle.htm)
+> - [Microsoft: Manage AD Users](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/component-updates/ad-ds-management-using-powershell)
+> - [Microsoft: Disable-ADAccount](https://learn.microsoft.com/en-us/powershell/module/activedirectory/disable-adaccount)
+> - [Microsoft: Move-ADObject](https://learn.microsoft.com/en-us/powershell/module/activedirectory/move-adobject)
+
 ### 6.1 Overview
 
 This phase covers user account cleanup, email standardization, and proper group assignments.
@@ -1498,6 +1539,15 @@ For users that were created locally in CyberArk Identity and should be removed:
 ---
 
 ## 7. Phase 4: Multi-Factor Authentication
+
+> **📚 External References:**
+> - [CyberArk Identity: MFA Overview](https://docs.cyberark.com/identity/latest/en/content/mfa/mfa.htm)
+> - [CyberArk Identity: Authentication Policies](https://docs.cyberark.com/identity/latest/en/content/policies/policies.htm)
+> - [CyberArk Identity: Email OTP](https://docs.cyberark.com/identity/latest/en/content/mfa/email-otp.htm)
+> - [CyberArk Identity: SMS OTP](https://docs.cyberark.com/identity/latest/en/content/mfa/sms-otp.htm)
+> - [CyberArk Identity: Mobile Authenticator](https://docs.cyberark.com/identity/latest/en/content/mfa/mobile-authenticator.htm)
+> - [CyberArk Identity App - iOS](https://apps.apple.com/app/cyberark-identity/id1527456686)
+> - [CyberArk Identity App - Android](https://play.google.com/store/apps/details?id=com.cyberark.identity)
 
 ### 7.1 Overview
 
@@ -1761,6 +1811,15 @@ For users needing assistance:
 ---
 
 ## 8. Phase 5: PSM High Availability Deployment
+
+> **📚 External References:**
+> - [CyberArk: PSM Overview](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/psm-overview.htm)
+> - [CyberArk: Install Connector](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/install-connector.htm)
+> - [CyberArk: PSM for Windows](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/psm-for-windows.htm)
+> - [CyberArk: PSM High Availability](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/psm-ha.htm)
+> - [CyberArk: PSM Load Balancing](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/psm-load-balancing.htm)
+> - [CyberArk: Session Recording](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/session-recording.htm)
+> - [Microsoft: DNS Round Robin](https://learn.microsoft.com/en-us/windows-server/networking/dns/dns-top)
 
 ### 8.1 Overview
 
@@ -2091,6 +2150,12 @@ Get-Service -Name "CyberArk Privileged Session Manager"
 
 ## 9. Phase 6: SIA Configuration
 
+> **📚 External References:**
+> - [CyberArk: Secure Infrastructure Access (SIA)](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/sia-overview.htm)
+> - [CyberArk: SIA Connector Installation](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/sia-connector-installation.htm)
+> - [CyberArk: SIA Architecture](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/sia-architecture.htm)
+> - [CyberArk: Configure SIA Targets](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/sia-targets.htm)
+
 ### 9.1 Overview
 
 SIA (Secure Infrastructure Access) was installed alongside PSM. This phase covers verification and configuration for secure access to infrastructure.
@@ -2152,6 +2217,14 @@ SIA enables secure access to infrastructure without traditional VPN. Configure t
 ---
 
 ## 10. Phase 7: Naming Conventions and Standards
+
+> **📚 External References:**
+> - [CyberArk: Safe Management](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/safes.htm)
+> - [CyberArk: Create a Safe](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/create-safe.htm)
+> - [CyberArk: Safe Members and Permissions](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/safe-members.htm)
+> - [CyberArk: Platforms Overview](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/platforms-overview.htm)
+> - [CyberArk: Platform Management](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/platform-management.htm)
+> - [CyberArk Marketplace: Platform Packs](https://cyberark-customers.force.com/mplace/s/#--Background)
 
 ### 10.1 Safe Naming Convention
 
@@ -2329,6 +2402,14 @@ When custom platforms are needed:
 
 ## 11. Phase 8: OKTA Integration
 
+> **📚 External References:**
+> - [CyberArk Identity: External IdP Integration](https://docs.cyberark.com/identity/latest/en/content/integrations/saml/saml-external-idp.htm)
+> - [CyberArk Identity: SAML Configuration](https://docs.cyberark.com/identity/latest/en/content/integrations/saml/saml-overview.htm)
+> - [Okta: Create SAML App Integration](https://help.okta.com/en-us/content/topics/apps/apps_app_integration_wizard_saml.htm)
+> - [Okta: SAML 2.0 Technical Overview](https://developer.okta.com/docs/concepts/saml/)
+> - [Okta: Configure SAML Settings](https://help.okta.com/en-us/content/topics/apps/apps_app_integration_wizard_saml.htm)
+> - [OASIS: SAML 2.0 Specification](http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html)
+
 ### 11.1 Overview
 
 This phase configures OKTA as an external SAML Identity Provider for specific user groups.
@@ -2493,6 +2574,12 @@ Click **"Save"**
 
 ## 12. Validation and Testing
 
+> **📚 External References:**
+> - [CyberArk: System Health Dashboard](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/system-health.htm)
+> - [CyberArk: Connector Status](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/connector-status.htm)
+> - [CyberArk: Session Monitoring](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/session-monitoring.htm)
+> - [CyberArk: Audit and Reports](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/reports.htm)
+
 ### 12.1 Complete System Validation Checklist
 
 Execute this comprehensive validation after completing all phases:
@@ -2631,6 +2718,14 @@ $Exclusions.ExclusionPath | ForEach-Object { Write-Host "  - $_" }
 
 ## 13. Troubleshooting
 
+> **📚 External References:**
+> - [CyberArk: Troubleshooting Guide](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/troubleshooting.htm)
+> - [CyberArk: PSM Troubleshooting](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/psm-troubleshooting.htm)
+> - [CyberArk: Connector Troubleshooting](https://docs.cyberark.com/privilege-cloud/latest/en/content/pasimp/connector-troubleshooting.htm)
+> - [CyberArk Identity: Troubleshooting](https://docs.cyberark.com/identity/latest/en/content/admin/troubleshooting.htm)
+> - [CyberArk Community](https://cyberark-customers.force.com/s/)
+> - [CyberArk Support Portal](https://support.cyberark.com)
+
 ### 13.1 AD Connector Issues
 
 #### Problem: Directory sync fails
@@ -2741,6 +2836,14 @@ $Exclusions.ExclusionPath | ForEach-Object { Write-Host "  - $_" }
 ---
 
 ## 14. Appendices
+
+> **📚 External References:**
+> - [CyberArk Documentation Portal](https://docs.cyberark.com/)
+> - [CyberArk Privilege Cloud Release Notes](https://docs.cyberark.com/privilege-cloud/latest/en/content/release-notes/release-notes.htm)
+> - [CyberArk REST API Documentation](https://docs.cyberark.com/privilege-cloud/latest/en/content/webservices/webservices.htm)
+> - [CyberArk GitHub - psPAS PowerShell Module](https://github.com/pspete/psPAS)
+> - [CyberArk GitHub - Community Tools](https://github.com/cyberark)
+> - [Microsoft PowerShell Documentation](https://learn.microsoft.com/en-us/powershell/)
 
 ### Appendix A: Complete Server IP Reference
 
